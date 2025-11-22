@@ -1,0 +1,166 @@
+/* Reset và font chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f0;
+    font-family: "Beiruti", sans-serif;
+    color: #485550;
+}
+
+/* Header */
+header {
+    background-color: #c0eb6a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 5%;
+}
+
+.headleft {
+    display: flex;
+    align-items: center; /* căn giữa logo */
+}
+
+#logolink img {
+    margin-left: -10px;
+    max-height: 10vh;     /* vừa với header */
+    width: auto;
+    display: block;
+}
+.search-container{
+    padding-left:5vw;
+}
+.search-container .input-group {
+    border-radius: 50px;          /* Bo tròn lớn */
+    overflow: hidden;             /* Giữ bo tròn */
+    display: flex;
+    background-color: #f4f6f0;
+    width: 30vw;
+}
+.search-container .input-group .btn-outline-secondary {
+    border: none;
+    background-color: #f4f6f0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchInput {
+    border: none;
+    border-radius: 0;            /* Không bo riêng lẻ */
+    flex: 1;                     /* Chiếm phần còn lại */
+    background-color: transparent; /* Nhằm giữ màu của container */
+    color: #485550;
+    padding-left: 10px;
+}
+#searchInput:focus {
+    outline: none;
+    box-shadow: none;
+}
+#searchDropdown {
+    width: 100%;
+}
+#searchDropdown li {
+    cursor: pointer;
+}
+
+/* Vùng phải header */
+.headright {
+    display: flex;
+    align-items: center;
+}
+
+/* Tùy chọn menu (username hoặc đăng nhập) */
+.option {
+    font-size: 1.4rem; /* ✅ chữ to hơn */
+    font-weight: 500;
+    display: flex;
+    align-items: center; /* căn giữa icon chuông và avatar */
+    gap: 12px; /* tạo khoảng cách đẹp */
+}
+
+/* Nút dropdown (không nền trắng, đồng màu header) */
+.option .btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #485550;
+    background: transparent; /* ✅ trong suốt */
+    border: none;
+    padding: 8px 16px;
+}
+/* Nút đăng nhập to hơn */
+.option a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #485550;
+    text-decoration: none;
+}
+.option .btn:hover,
+.option .btn:focus {
+    color: #2d352f;
+    background: rgba(255, 255, 255, 0.3); /* nền nhạt khi hover */
+}
+#avt {
+    border: 3px solid rgb(72, 85, 80) !important;
+    object-fit: cover;
+}
+/* Dropdown menu */
+.dropdown-menu {
+    font-size: 1rem;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+.dropdown-item {
+    white-space: normal !important;       /* cho phép xuống dòng */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 8px 12px;                    /* giữ padding chuẩn */
+    border-bottom: 1px solid #48555090 !important;    /* border hiển thị */
+    background-color: #fff !important;              /* đảm bảo không bị che bởi background */
+}
+.dropdown-item:last-child {
+    border-bottom: none !important;
+}
+/* Main content */
+main {
+    position: absolute;
+    top: 15vh;
+    bottom: 8vh; /* ✅ chừa chỗ cho footer cao hơn */
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+/* Footer */
+footer {
+    background: #c0eb3a;
+    color: #485550;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

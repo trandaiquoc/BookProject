@@ -1,0 +1,122 @@
+body{
+    display:flex;
+    flex-direction: column;   /* sắp xếp theo cột */
+    align-items: center;      /* căn giữa theo ngang */
+    justify-content: space-around;  /* căn giữa theo dọc */
+    text-align: center;
+    min-height: 100vh;        /* chiếm toàn bộ chiều cao màn hình */
+}
+
+#title {
+    color: #485550;
+    margin-bottom: 25px;
+}
+.profile-form {
+    display: flex;
+    flex-direction: row;
+    min-height: auto;
+    gap: 30px;
+}
+#left
+{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+
+}
+
+.avatar-section img{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #485550;
+}
+
+
+.custom-file-label {
+    display: inline-block;
+    background-color: #748f254d;
+    color: #485550;
+    padding: 10px 15px;
+    border: 1px solid #48555049;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.custom-file-label:hover {
+    background-color: #485550;
+    color: #f4f6f0;
+}
+
+#right {
+    width: 60vw;
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #485550;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #485550;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #48555049;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.save {
+    color: #485550;
+    background-color: #748f254d;
+}
+
+.btn.save:hover {
+    background-color: #c0eb3a;
+    color: #485550;
+}
+
+.btn.cancel {
+    color: #f4f6f0;
+    background-color: #485550;
+}
+
+.btn.cancel:hover {
+    color: #f4f6f0;
+    background-color: #ab1e1e4d;
+}

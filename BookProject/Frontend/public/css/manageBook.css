@@ -1,0 +1,95 @@
+.tabs {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f4f6f0b8;
+    color: #485550;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #c0eb3a;
+    color: #485550
+}
+
+.tab-content {
+    margin-top: 20px;
+    width: 100%;
+    color: #485550;
+    background-color: #f4f6f0b8;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;        /* Cho phép xuống dòng */
+    gap: 20px;              /* Khoảng cách giữa các ô sách */
+    align-items: stretch;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;           /* Chiều rộng ô sách */
+    padding: 10px;
+    border: 1px solid #485550;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    height:50vh;
+}
+
+.book-item:hover {
+    transform: translateY(-3px);
+}
+
+.book-avatar {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-info {
+    text-align: center;
+}
+
+.book-link{
+    text-decoration: none;
+    color:#485550;
+}
+
+/* Container của tiến độ */
+.progress-container {
+    width: 100%;
+    height: 12px;
+    background-color: #485550;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Thanh tiến độ thực tế */
+.progress-bar {
+    height: 100%;
+    background-color: #c0eb3a; /* màu xanh */
+    width: 0%; /* sẽ set động qua inline style */
+    border-radius: 8px 0 0 8px;
+}

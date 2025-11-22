@@ -1,0 +1,90 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-container h1 {
+    font-size: 250%;
+    color: #485550;
+}
+
+.form-group {
+    width: 50%;
+    margin-top:5vh;
+}
+#user, #pass
+{
+    margin-bottom: 5vh;
+}
+label {
+    margin-bottom: 10px;
+    color: rgb(72, 85, 80);
+}
+
+#username,#password {
+    width: 100%;
+    height: 7.5vh;
+    font-size: 16px;
+    border: 3px solid rgba(72, 85, 80, 0.3);
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: rgb(72, 85, 80);
+    text-indent: 10px;
+}
+
+.login-button {
+    width: 100%;
+    height: 7.5vh;
+    font-size: 18px;
+    color: #485550;
+    background-color: rgba(116, 143, 37, 0.3);
+    border: 1px solid #48555049;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #485550;
+    color: #f4f6f0;
+}
+
+.hideshow-container {
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+#toggleIcon{
+    margin-right: 10px;
+}
+
+#toggleText
+{
+    color: rgb(72, 85, 80);
+}
+
+.account-links {
+    text-align: right;
+}
+
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.account-links a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.account-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

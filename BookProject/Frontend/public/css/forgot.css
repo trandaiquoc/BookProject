@@ -1,0 +1,53 @@
+.changePassContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.changePassContainer h1 {
+    font-size: 250%;
+    color: #485550;
+}
+
+.form-group {
+    width: 50%;
+    margin-top:5vh;
+}
+
+.user, #pass
+{
+    margin-bottom: 5vh;
+}
+label {
+    margin-bottom: 10px;
+    color: rgb(72, 85, 80);
+}
+
+#username,#password, #username2, #password2 {
+    width: 100%;
+    height: 7.5vh;
+    font-size: 16px;
+    border: 3px solid rgba(72, 85, 80, 0.3);
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: rgb(72, 85, 80);
+    text-indent: 10px;
+}
+
+.button {
+    width: 100%;
+    height: 7.5vh;
+    font-size: 18px;
+    color: #485550;
+    background-color: rgba(116, 143, 37, 0.3);
+    border: 1px solid #48555049;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #485550;
+    color: #f4f6f0;
+}

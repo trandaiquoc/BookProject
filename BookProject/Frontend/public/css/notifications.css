@@ -1,0 +1,31 @@
+body{
+    color:#485550;
+}
+.title {
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px -2px #48555033; /* offset-x offset-y blur spread color */
+}
+.allNotif{
+    overflow-y:auto;
+}
+.notif{
+    position: relative;
+    white-space: normal !important;       /* cho phép xuống dòng */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 8px 12px;                    /* giữ padding chuẩn */
+    border-bottom: 1px solid #48555090;
+}
+.notifications-item .notif:last-of-type {
+    border-bottom: none;
+}
+.remove-log-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0 5px; 
+    font-size: 20px;
+    line-height: 1; /* 1 lần chiều cao chữ */
+    color:#485550;
+}

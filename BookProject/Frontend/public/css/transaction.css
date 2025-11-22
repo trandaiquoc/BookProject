@@ -1,0 +1,59 @@
+.transaction-item {
+    border-bottom: 1px solid #4855505c;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #485550;
+}
+
+.transaction-item .top-row,
+.transaction-item .middle-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.transaction-item .left {
+    text-align: left;
+    font-weight: 500;
+}
+
+.transaction-item .right {
+    text-align: right;
+    font-weight: 500;
+}
+
+.transaction-item .bottom-row {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.transaction-item .status {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Trạng thái màu sắc */
+.transaction-item .status.pending {
+    background-color: #FFD700; /* vàng */
+    color: #485550;
+}
+
+.transaction-item .status.success {
+    background-color: #c0eb3a; /* xanh */
+    color: #485550;
+}
+
+.transaction-item .status.failed {
+    background-color: #dc3545; /* đỏ */
+    color: #f4f6f0;
+}
+
+.cancel-transaction{
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #485550; 
+    color: #f4f6f0;
+}

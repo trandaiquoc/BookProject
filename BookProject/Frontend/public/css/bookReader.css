@@ -1,0 +1,84 @@
+/* overlay toàn màn hình */
+#reader-overlay {
+    position: fixed; /*Overlay luôn nằm trên cùng, cố định khi scroll. */
+    inset: 0; /*Tương đương top:0; right:0; bottom:0; left:0;, phủ toàn màn hình. */
+    background: rgba(0,0,0,0.55);
+    display: none; /* mặc định overlay ẩn, chỉ hiển thị khi mở PDF. */
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /*đảm bảo overlay nằm trên tất cả các phần tử khác */
+}
+
+/* container đọc sách */
+#reader-container {
+    width: 65%;
+    height: 95%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /*canvas trên, controls dưới */
+}
+
+/* nút đóng */
+#reader-close {
+    position: absolute; /* phụ thuộc vào cha ở trên đối với right và top */
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1100;
+}
+/* wrapper chứa canvas */
+#pdf-wrapper {
+    flex: 1; /* chiếm toàn bộ phần còn lại */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+
+/* canvas PDF */
+#pdf-canvas {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* controls dưới canvas */
+#reader-controls {
+    flex-shrink: 0;     /* không cho nó bị đẩy ra ngoài */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    height: 45px;
+}
+
+#reader-controls button {
+    padding: 6px 12px;
+    border: 1px solid #485550;
+    background: #c0eb3a;
+    color: #485550;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+#reader-controls button:hover {
+    background: #485550;
+    color:  #f4f6f0;
+}
+
+#pageInfo {
+    min-width: 80px;
+    text-align: center;
+    color:  #485550;
+}
